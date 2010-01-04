@@ -1,0 +1,10 @@
+# Git aliases
+alias gst='git status'
+alias gdiff='git diff'
+alias gcommit='git commit -v -a'
+alias glog='git log'
+
+# builtin aliases
+alias ls='ls -G'
+alias ..='cd ..'
+alias ...='cd $OLDPWD'

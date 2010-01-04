@@ -1,0 +1,5 @@
+# load git prompt
+. ~/bin/util/git-prompt/git-prompt.sh
+
+# autolist a dir when you cd
+cd() { builtin cd "$1"; ls -G; }
