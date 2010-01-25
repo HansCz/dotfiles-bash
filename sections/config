@@ -16,3 +16,5 @@ _rakecomplete() {
 }
 complete -o default -o nospace -F _rakecomplete rake
 
+# autocomplete hosts
+complete -W "$(cat /etc/hosts | awk '$1 != "#" {print $2}')" ssh
