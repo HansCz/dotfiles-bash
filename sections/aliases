@@ -8,3 +8,7 @@ alias glog='git log'
 alias ls='ls -G'
 alias ..='cd ..'
 alias ...='cd $OLDPWD'
+
+# Miscellaneous shortcuts
+
+alias hg='history | grep '
