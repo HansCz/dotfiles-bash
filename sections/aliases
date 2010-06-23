@@ -12,3 +12,4 @@ alias ...='cd $OLDPWD'
 # Miscellaneous shortcuts
 
 alias hg='history | grep '
+alias em='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient'
