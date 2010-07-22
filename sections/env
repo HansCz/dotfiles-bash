@@ -12,3 +12,6 @@ export EDITOR="mate -w"
 unset HISTFILESIZE
 export PROMPT_COMMAND="history -a"
 shopt -s histappend
+
+# only register unique entries in history file
+export HISTIGNORE="&"
