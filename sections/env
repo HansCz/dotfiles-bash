@@ -7,3 +7,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
 # Set default editor
 export EDITOR="mate -w"
+
+# Share history file across sessions
+unset HISTFILESIZE
+export PROMPT_COMMAND="history -a"
+shopt -s histappend
