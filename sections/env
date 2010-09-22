@@ -10,7 +10,7 @@ export EDITOR="mate -w"
 
 # Share history file across sessions
 unset HISTFILESIZE
-export PROMPT_COMMAND="history -a"
+export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 shopt -s histappend
 
 # only register unique entries in history file
