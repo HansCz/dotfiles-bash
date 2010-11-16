@@ -13,3 +13,5 @@ alias ...='cd $OLDPWD'
 
 alias hg='history | grep '
 alias em='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n'
+
+alias ats='bundle exec autotest'
