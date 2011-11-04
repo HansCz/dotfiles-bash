@@ -2,4 +2,4 @@
 . ~/bin/dotfiles/bash/sections/config
 . ~/bin/dotfiles/bash/sections/aliases
 
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+[[ -s "/Users/hans/.rvm/scripts/rvm" ]] && source "/Users/hans/.rvm/scripts/rvm"
