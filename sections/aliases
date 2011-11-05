@@ -16,3 +16,4 @@ alias em='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n'
 
 alias ats='bundle exec autotest'
 alias vmux="ssh vishnu -t tmux a"
+alias src='source ~/bin/util/ps1/ps1.bash;ps1_set'
