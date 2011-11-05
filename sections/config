@@ -1,5 +1,6 @@
 # load prompt
 source ~/bin/util/ps1/ps1.bash
+ps1_set
 
 # load git autocompletion
 . ~/bin/util/git-completion/git-completion.bash
