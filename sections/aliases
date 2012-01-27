@@ -2,7 +2,7 @@
 alias gst='git status'
 alias gdiff='git diff'
 alias gcommit='git commit -v -a'
-alias glog='git log'
+alias glog='git l'
 
 # builtin aliases
 alias ls='ls -G'
