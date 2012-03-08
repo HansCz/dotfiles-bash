@@ -4,9 +4,6 @@ export PATH=~/bin/util/temp:$PATH
 # Add /usr/local and friends (taken from: http://hivelogic.com/articles/compiling-git-on-snow-leopard/)
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
-# Add git to path
-export PATH="/usr/local/git/bin/:$PATH"
-
 
 # Set default editor
 export EDITOR="mate -w"
