@@ -22,3 +22,8 @@ complete -W "$(cat ~/.ssh/config | awk '/Host / {print $2}';cat /etc/hosts | awk
 
 # load up rvm
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+# Insure autojump (brew distribution) works
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
