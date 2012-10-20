@@ -1,4 +1,5 @@
-if [[ `uname` == "Darwin" ]]; then
+if [[ "$OSNAME" == "$DEFAULT_OSNAME" && "$HOSTNAME" == "$DEFAULT_HOSTNAME" ]] 
+then
   eval `ssh-agent` >/dev/null
 fi
 
