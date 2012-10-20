@@ -1,6 +1,3 @@
-# Add the location of user-specific scripts and programs to the beginning of $PATH
-export PATH=~/bin:$PATH
-export PATH=~/bin/util/temp:$PATH
 # Add /usr/local and friends (taken from: http://hivelogic.com/articles/compiling-git-on-snow-leopard/)
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
