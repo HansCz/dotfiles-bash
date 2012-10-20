@@ -1,8 +1,3 @@
-if [[ "$OSNAME" == "$DEFAULT_OSNAME" && "$HOSTNAME" == "$DEFAULT_HOSTNAME" ]] 
-then
-  eval `ssh-agent` >/dev/null
-fi
-
 # load prompt
 source $BASH/lib/ps1.bash
 ps1_set
@@ -24,3 +19,8 @@ complete -o default -o nospace -F _rakecomplete rake
 
 # autocomplete from ~/.ssh/config and /etc/hosts
 complete -W "$(cat ~/.ssh/config | awk '/Host / {print $2}';cat /etc/hosts | awk '$1 != "#" {print $2}')" ssh
+
+if [[ "$OSNAME" == "$DEFAULT_OSNAME" && "$HOSTNAME" == "$DEFAULT_HOSTNAME" ]] 
+then
+  eval `ssh-agent` >/dev/null
+fi

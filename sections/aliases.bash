@@ -1,3 +1,20 @@
+# builtins
+alias ls='ls -G'
+alias ..='cd ..'
+alias ...='cd $OLDPWD'
+
+# Git
+if [[ `command -v git` ]]; then
+  alias gst='git status'
+  alias gd='git diff'
+  alias gdc='git diff --cached'
+  alias gl='git lol'
+  alias gll='git l'  
+fi
+
+# Miscellaneous shortcuts
+alias hg='history | grep '
+
 if [[ "$OSNAME" == "$DEFAULT_OSNAME" && "$HOSTNAME" == "$DEFAULT_HOSTNAME" ]] 
 then
   # MacVim alias
@@ -16,21 +33,3 @@ then
   alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
   alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 fi
-
-
-# Git
-if [[ `command -v git` ]]; then
-  alias gst='git status'
-  alias gd='git diff'
-  alias gdc='git diff --cached'
-  alias gl='git lol'
-  alias gll='git l'  
-fi
-
-# builtins
-alias ls='ls -G'
-alias ..='cd ..'
-alias ...='cd $OLDPWD'
-
-# Miscellaneous shortcuts
-alias hg='history | grep '
