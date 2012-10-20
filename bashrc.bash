@@ -3,7 +3,7 @@ OSNAME=`uname`
 HOSTNAME=`hostname`
 
 # Path to my bash configuration.
-BASH=/tmp/dotfiles-bash #$HOME/bin/dotfiles/bash
+BASH=$HOME/bin/dotfiles/bash
 
 # set the default username and hostname
 # these will be omitted from prompt
