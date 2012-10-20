@@ -27,11 +27,10 @@ if [[ `command -v git` ]]; then
   alias gll='git l'  
 fi
 
-# builtin aliases
+# builtins
 alias ls='ls -G'
 alias ..='cd ..'
 alias ...='cd $OLDPWD'
 
 # Miscellaneous shortcuts
-
 alias hg='history | grep '
