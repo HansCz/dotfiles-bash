@@ -41,12 +41,10 @@ function ps1_working_directory () {
 
 function ps1_identity () {
 
-  local homefront_username='hans'
-
   if [[ $UID -eq 0 ]] ; then
     printf "\033[38;5;160m\u\033[0m"
   else
-    if [[ $USER != $homefront_username ]]; then
+    if [[ $USER != $DEFAULT_USERNAME ]]; then
       printf "\033[38;5;240m$USER@\033[0m"
     fi
   fi
@@ -55,9 +53,7 @@ function ps1_identity () {
 
 function ps1_host () {
 
-  local homefront_host='brahma.local'
-
-  if [[ $homefront_host != `hostname` ]]; then
+  if [[ $DEFAULT_HOSTNAME != `hostname` ]]; then
     printf "\033[38;5;240m`hostname`:\033[0m"
   fi
   return 0
