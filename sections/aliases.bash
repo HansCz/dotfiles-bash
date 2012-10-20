@@ -13,7 +13,6 @@ alias ...='cd $OLDPWD'
 
 alias hg='history | grep '
 
-alias vmux="ssh vishnu -t tmux a"
 alias src='source ~/bin/util/ps1/ps1.bash;ps1_set'
 
 alias nukelog='sudo rm -rf /private/var/log/asl/*.asl'
