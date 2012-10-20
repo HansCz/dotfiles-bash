@@ -1,3 +1,3 @@
-. ~/bin/dotfiles/bash/sections/env
-. ~/bin/dotfiles/bash/sections/config
-. ~/bin/dotfiles/bash/sections/aliases
+. ~/bin/dotfiles/bash/sections/env.bash
+. ~/bin/dotfiles/bash/sections/config.bash
+. ~/bin/dotfiles/bash/sections/aliases.bash
