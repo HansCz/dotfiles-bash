@@ -4,11 +4,11 @@ then
 fi
 
 # load prompt
-source ~/bin/util/ps1/ps1.bash
+source $BASH/lib/ps1.bash
 ps1_set
 
 # load git autocompletion
-. ~/bin/util/git-completion/git-completion.bash
+. $BASH/lib/git-completion.bash
 
 # autolist a dir when you cd
 cd() { builtin cd "$1"; ls -G; }
