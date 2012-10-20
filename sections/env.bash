@@ -1,16 +1,5 @@
-if [[ "$OSNAME" == "$DEFAULT_OSNAME" && "$HOSTNAME" == "$DEFAULT_HOSTNAME" ]] 
-then
-  # Add /usr/local and friends
-  export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-
-  export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
-
-  # Make node pick up libs
-  export NODE_PATH=/usr/local/lib/node
-fi
-
 # Set default editor
-export EDITOR="mate -w"
+export EDITOR="vim"
 
 # Share history file across sessions
 unset HISTFILESIZE
@@ -20,3 +9,16 @@ shopt -s histappend
 # only register unique entries in history file
 export HISTIGNORE="&"
 
+if [[ "$OSNAME" == "$DEFAULT_OSNAME" && "$HOSTNAME" == "$DEFAULT_HOSTNAME" ]] 
+then
+  # Add /usr/local and friends
+  export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+
+  export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home
+
+  # Make node pick up libs
+  export NODE_PATH=/usr/local/lib/node
+
+  # Set default editor
+  export EDITOR="subl"
+fi
