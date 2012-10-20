@@ -24,8 +24,3 @@ complete -o default -o nospace -F _rakecomplete rake
 
 # autocomplete from ~/.ssh/config and /etc/hosts
 complete -W "$(cat ~/.ssh/config | awk '/Host / {print $2}';cat /etc/hosts | awk '$1 != "#" {print $2}')" ssh
-
-# Insure autojump (brew distribution) works
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
-fi
