@@ -1,8 +1,11 @@
-# Git aliases
-alias gst='git status'
-alias gdiff='git diff'
-alias gcommit='git commit -v -a'
-alias glog='git l'
+# Git
+if [[ `command -v git` ]]; then
+  alias gst='git status'
+  alias gd='git diff'
+  alias gdc='git diff --cached'
+  alias gl='git lol'
+  alias gll='git l'  
+fi
 
 # builtin aliases
 alias ls='ls -G'
